@@ -1,3 +1,8 @@
+/**
+ * auteur :
+ * répond à l'exigence 3.
+ */
+
 package dcll.adav.MySimpleStack;
 
 import java.util.EmptyStackException;

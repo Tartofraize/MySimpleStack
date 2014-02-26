@@ -1,16 +1,21 @@
 package dcll.adav.MySimpleStack;
 
-import junit.framework.Assert;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
 import junit.framework.TestCase;
 
 public class SimpleStackImplTest extends TestCase {
 
-	SimpleStack simpleStack = new SimpleStackImpl();
+	SimpleStack simpleStack;
 	
+	@Before
 	public void setup() {
 		simpleStack = new SimpleStackImpl();
 	}
 	
+	@Test
 	public void test() {
 		Assert.assertEquals(true, simpleStack.isEmpty());
 		simpleStack.push(new Item(new String("toto")));
